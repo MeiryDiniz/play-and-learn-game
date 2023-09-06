@@ -1,0 +1,30 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 150%;
+}
+
+#hero {
+    border: 2px solid #f050ae;
+    height: 300px;
+    width: 100%;
+    background: black;
+}
+
+#hero h1 {
+    color: #51aef0;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 120px;
+    line-height: 2;
+    text-align: center;
+}
