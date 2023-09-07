@@ -86,5 +86,14 @@ body {
 }
 
 #welcome-message h2 {
+    font-size: 35px;
+    margin-top: 2px;
     text-align: center;
+}
+
+#game-instructions {
+    font-size: 30px;
+position: fixed;
+left: 45%;
+top: 90%;
 }
