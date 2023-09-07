@@ -28,3 +28,63 @@ body {
     line-height: 2;
     text-align: center;
 }
+
+#game-pre-view {
+    border: 2px solid #f050ae;
+    height: 250px;
+    margin: auto;
+    width: 50%;
+    background: black;
+}
+
+#game-name {
+    color: #f050ae;
+    font-size: 50px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#icon {
+    margin: auto;
+    height: 60px;
+    width: 6%;
+}
+
+#answer-box-pre-view {
+    background: whitesmoke;
+    border: 2px solid #f0e351;
+    margin: auto;
+    height: 50px;
+    width: 50%;
+}
+
+#answer-box-pre-view p {
+    font-size: 60px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#start-button{
+    background: black;
+    border: 2px solid #51f093;
+    color: #f050ae;
+    font-size: 50px;
+    position: fixed;
+    left: 45%;
+    top: 70%;
+   
+}
+
+#welcome-message {
+    border: 2px solid #f050ae;
+    color: black;
+    height: 40px;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    top: 80%;
+}
+
+#welcome-message h2 {
+    text-align: center;
+}
