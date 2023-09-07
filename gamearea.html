@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,23 +11,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Quicksand:wght@600&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Play and Learn</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="hero">
-            <h1>
-                <i class="fa-solid fa-a fa-sm" style="color: #f050ae"></i>
-                <i class="fa-solid fa-b fa-sm" style="color: #f0e351"></i> Spelling Game
- <i class="fa-solid fa-c fa-sm" style="color: #f09351"></i>
-                <i class="fa-solid fa-d fa-sm" style="color: #51f093"></i>
-            </h1>
-        </div>
+      <div id="hero">
+        <h1>
+          <i class="fa-solid fa-a fa-sm" style="color: #f050ae"></i>
+          <i class="fa-solid fa-b fa-sm" style="color: #f0e351"></i> Spelling
+          Game
+          <i class="fa-solid fa-c fa-sm" style="color: #f09351"></i>
+          <i class="fa-solid fa-d fa-sm" style="color: #51f093"></i>
+        </h1>
+      </div>
     </header>
+    <div class="score">
+        <p> <i class="fa-regular fa-square-check fa-2xs" style="color: #51f093;"></i> Answers <span id="correct">0</span></p>
+    </div>
+    <div class="score">
+        <p> <i class="fa-regular fa-rectangle-xmark fa-2xs" style="color: #f09351;"></i> Answers <span id="wrong">0</span></p>
+    </div>
+    <div id="game-area">
+      <span id="game-image">img</span>
+      <input id="game-answer" type="text"/>
+    </div>
+    <div id="back-main-page">
+        <button>Back</button>
+    </div>
+    <div id="check-answer">
+        <button>Check Answer</button>
+    </div>
+
+    <!-- font awesome script-->
+    <script
+      src="https://kit.fontawesome.com/c2f4ffc429.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
