@@ -18,6 +18,8 @@ body {
    background-attachment: fixed;
 }
 
+/* index.html style */
+
 /* hero */
 
 #hero {
@@ -124,6 +126,10 @@ body {
 }
 
 /* gamearea.html style */
+
+a {
+    text-decoration: none;
+}
 
 /* score buttons */
 
