@@ -12,6 +12,12 @@ body {
     line-height: 150%;
 }
 
+.background-img {
+   background: url('../images/background-image.webp') no-repeat center center;
+   overflow: hidden;
+   background-attachment: fixed;
+}
+
 /* hero */
 
 #hero {
@@ -92,7 +98,7 @@ body {
 
 #welcome-message {
     border: 2px solid #f050ae;
-    color: black;
+   background: whitesmoke;
     height: 40px;
     width: 80%;
     margin: auto;
