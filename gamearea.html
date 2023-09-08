@@ -51,7 +51,7 @@
     <div class="score">
       <p>
         <i class="fa-regular fa-square-check fa-sm" style="color: #51f093"></i>
-        Answers <span id="correct">0</span>
+        Correct Answers <span id="correct">0</span>
       </p>
     </div>
     <br />
@@ -61,26 +61,30 @@
           class="fa-regular fa-rectangle-xmark fa-sm"
           style="color: #f09351"
         ></i>
-        Answers <span id="wrong">0</span>
+        Wrong Answers <span id="wrong">0</span>
       </p>
     </div>
     <br />
     <div id="game-area">
       <div id="image-box">
-        <span id="game-image"
-          ><i
-            class="fa-regular fa-rectangle-xmark fa-xl"
-            style="color: #f09351"
-          ></i
-        ></span>
+        <span id="game-image"></span>
       </div>
       <br />
-      <input id="game-answer-box" type="text" />
-      <br>
+      <input
+        id="game-answer-box"
+        type="text"
+        placeholder="Type your Answer here!"
+      />
+      <br />
       <div id="buttons-box">
-        <button class="game-buttons" id="home-page" onclick="home()">Home <i class="fa-solid fa-rotate-left" style="color: #51aef0;"></i></button>
-        <br>
-        <button class="game-buttons" id="check-answer">Check Answer <i class="fa-solid fa-check fa-sm" style="color: #51f093;"></i> </button>
+        <button class="game-buttons" id="home-page" onclick="home()">
+          Home <i class="fa-solid fa-rotate-left" style="color: #51aef0"></i>
+        </button>
+        <br />
+        <button class="game-buttons" id="check-answer">
+          Check Answer
+          <i class="fa-solid fa-check fa-sm" style="color: #51f093"></i>
+        </button>
       </div>
     </div>
 
