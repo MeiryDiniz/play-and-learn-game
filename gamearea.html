@@ -47,21 +47,41 @@
         </h1>
       </div>
     </header>
+    <br />
     <div class="score">
-        <p> <i class="fa-regular fa-square-check fa-2xs" style="color: #51f093;"></i> Answers <span id="correct">0</span></p>
+      <p>
+        <i class="fa-regular fa-square-check fa-sm" style="color: #51f093"></i>
+        Answers <span id="correct">0</span>
+      </p>
     </div>
+    <br />
     <div class="score">
-        <p> <i class="fa-regular fa-rectangle-xmark fa-2xs" style="color: #f09351;"></i> Answers <span id="wrong">0</span></p>
+      <p>
+        <i
+          class="fa-regular fa-rectangle-xmark fa-sm"
+          style="color: #f09351"
+        ></i>
+        Answers <span id="wrong">0</span>
+      </p>
     </div>
+    <br />
     <div id="game-area">
-      <span id="game-image">img</span>
-      <input id="game-answer" type="text"/>
-    </div>
-    <div id="back-main-page">
-        <button>Back</button>
-    </div>
-    <div id="check-answer">
-        <button>Check Answer</button>
+      <div id="image-box">
+        <span id="game-image"
+          ><i
+            class="fa-regular fa-rectangle-xmark fa-xl"
+            style="color: #f09351"
+          ></i
+        ></span>
+      </div>
+      <br />
+      <input id="game-answer-box" type="text" />
+      <br>
+      <div id="buttons-box">
+        <button class="game-buttons" id="home-page" onclick="home()">Home <i class="fa-solid fa-rotate-left" style="color: #51aef0;"></i></button>
+        <br>
+        <button class="game-buttons" id="check-answer">Check Answer <i class="fa-solid fa-check fa-sm" style="color: #51f093;"></i> </button>
+      </div>
     </div>
 
     <!-- font awesome script-->
