@@ -89,7 +89,7 @@ body {
     display: flex;
 }
 
-#start-button {
+#game-page-bt {
     background: black;
     border: 2px solid #51f093;
     color: #f050ae;
@@ -176,6 +176,14 @@ a {
    align-items: center;
    display: flex;
    gap: 30px;
+}
+
+#home-page-button {
+    margin: auto;
+    background: black;
+        border: 2px solid #51f093;
+        color: #f050ae;
+        font-size: 25px;
 }
 
 .game-buttons {

@@ -39,13 +39,13 @@
     <header>
       <div id="hero">
         <a href="index.html">
-        <h1>
-          <i class="fa-solid fa-a fa-sm" style="color: #f050ae"></i>
-          <i class="fa-solid fa-b fa-sm" style="color: #f0e351"></i> Spelling
-          Game
-          <i class="fa-solid fa-c fa-sm" style="color: #f09351"></i>
-          <i class="fa-solid fa-d fa-sm" style="color: #51f093"></i>
-        </h1>
+          <h1>
+            <i class="fa-solid fa-a fa-sm" style="color: #f050ae"></i>
+            <i class="fa-solid fa-b fa-sm" style="color: #f0e351"></i> Spelling
+            Game
+            <i class="fa-solid fa-c fa-sm" style="color: #f09351"></i>
+            <i class="fa-solid fa-d fa-sm" style="color: #51f093"></i>
+          </h1>
         </a>
       </div>
     </header>
@@ -69,7 +69,7 @@
     <br />
     <div id="game-area">
       <div id="image-box">
-        <span id="game-image"></span>
+        <img id="image-display" src="" alt="Displayed Image" />
       </div>
       <br />
       <input
@@ -79,15 +79,22 @@
       />
       <br />
       <div id="buttons-box">
-        <button class="game-buttons" id="home-page" onclick="home()">
-          Home <i class="fa-solid fa-rotate-left" style="color: #51aef0"></i>
-        </button>
-        <br />
         <button class="game-buttons" id="check-answer">
           Check Answer
           <i class="fa-solid fa-check fa-sm" style="color: #51f093"></i>
         </button>
+        <br />
+        <button class="game-buttons" id="next-image">
+          Next
+          <i class="fa-solid fa-arrow-right fa-sm" style="color: #51f093"></i>
+        </button>
       </div>
+    </div>
+    <br />
+    <div>
+      <button  id="home-page-button" onclick="home()">
+        Home <i class="fa-solid fa-rotate-left" style="color: #51aef0"></i>
+      </button>
     </div>
 
     <!-- font awesome script-->
