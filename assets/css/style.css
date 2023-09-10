@@ -89,7 +89,7 @@ body {
     display: flex;
 }
 
-#game-page-bt {
+#play-bt {
     background: black;
     border: 2px solid #51f093;
     color: #f050ae;
@@ -178,7 +178,7 @@ a {
    gap: 30px;
 }
 
-#home-page-button {
+#home-bt {
     margin: auto;
     background: black;
         border: 2px solid #51f093;
