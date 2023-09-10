@@ -12,6 +12,11 @@ body {
     line-height: 150%;
 }
 
+button:hover, #play-bt:hover {
+    color: #51f093;
+    border-color: #f050ae;
+}
+
 .background-img {
    background: url('../images/background-image.webp') no-repeat center center;
    overflow: hidden;
@@ -96,6 +101,8 @@ body {
     font-size: 50px;
 }
 
+
+
 /* welcome message */
 
 #welcome-message {
@@ -176,17 +183,15 @@ a {
    align-items: center;
    display: flex;
    gap: 30px;
+
 }
 
-#home-bt {
-    margin: auto;
-    background: black;
-        border: 2px solid #51f093;
-        color: #f050ae;
-        font-size: 25px;
+#home-box {
+   margin: auto;
+   width: 5%;
 }
 
-.game-buttons {
+.game-box-buttons, #home-box {
     background: black;
     border: 2px solid #51f093;
     color: #f050ae;
