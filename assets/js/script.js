@@ -20,7 +20,7 @@ function homePage() {
 
 // Add event listeners to the game box page 
 
-
+document.addEventListener("DOMContentLoaded", function () {
     let callButtons = document.getElementsByTagName('button');
 
     for (let button of callButtons) {
@@ -31,6 +31,9 @@ function homePage() {
                 displayImageGame();
             }
         });
+
+        displayImageGame();
+
     }
 
     document.getElementById('game-answer-box').addEventListener('keydown', function (event) {
@@ -39,7 +42,58 @@ function homePage() {
         }
     });
 
-    displayImageGame();
+});
+
+// Images and answers array to call the function 
+// to load and display the images and match
+// it to the correct answers 
+
+
+let myImagesArray = [
+    'assets/images/gameimages/image1.webp',
+    'assets/images/gameimages/image2.webp',
+    'assets/images/gameimages/image3.webp',
+    'assets/images/gameimages/image4.webp',
+    'assets/images/gameimages/image5.webp',
+    'assets/images/gameimages/image6.webp',
+    'assets/images/gameimages/image7.webp',
+    'assets/images/gameimages/image8.webp',
+    'assets/images/gameimages/image9.webp',
+    'assets/images/gameimages/image10.webp',
+    'assets/images/gameimages/image11.webp',
+    'assets/images/gameimages/image12.webp',
+    'assets/images/gameimages/image13.webp',
+    'assets/images/gameimages/image14.webp',
+    'assets/images/gameimages/image15.webp',
+    'assets/images/gameimages/image16.webp',
+    'assets/images/gameimages/image17.webp',
+    'assets/images/gameimages/image18.webp',
+    'assets/images/gameimages/image19.webp',
+    'assets/images/gameimages/image20.webp'
+];
+
+let myAnswersArray = [
+    'bus',
+    'sun',
+    'mouse',
+    'butterfly',
+    'helicopter',
+    'rabbit',
+    'avocado',
+    'dragon',
+    'watermelon',
+    'lion',
+    'elephant',
+    'snowman',
+    'rainbow',
+    'pizza',
+    'giraffe',
+    'moon',
+    'snake',
+    'apple',
+    'dog',
+    'cat'
+];
 
 /**
  * The main function to display game images and 
@@ -48,57 +102,22 @@ function homePage() {
  */
 
 function displayImageGame() {
-    let myImagesArray = [
-        'assets/images/gameimages/image1.webp',
-        'assets/images/gameimages/image2.webp',
-        'assets/images/gameimages/image3.webp',
-        'assets/images/gameimages/image4.webp',
-        'assets/images/gameimages/image5.webp',
-        'assets/images/gameimages/image6.webp',
-        'assets/images/gameimages/image7.webp',
-        'assets/images/gameimages/image8.webp',
-        'assets/images/gameimages/image9.webp',
-        'assets/images/gameimages/image10.webp',
-        'assets/images/gameimages/image11.webp',
-        'assets/images/gameimages/image12.webp',
-        'assets/images/gameimages/image13.webp',
-        'assets/images/gameimages/image14.webp',
-        'assets/images/gameimages/image15.webp',
-        'assets/images/gameimages/image16.webp',
-        'assets/images/gameimages/image17.webp',
-        'assets/images/gameimages/image18.webp',
-        'assets/images/gameimages/image19.webp',
-        'assets/images/gameimages/image20.webp'
-    ];
+    // Check if all images were displayed
+    if (myAnswersArray.length === 0) {
 
-    let myAnswersArray = [
-        'bus',
-        'sun',
-        'mouse',
-        'butterfly',
-        'helicopter',
-        'rabbit',
-        'avocado',
-        'dragon',
-        'watermelon',
-        'lion',
-        'elephant',
-        'snowman',
-        'rainbow',
-        'pizza',
-        'giraffe',
-        'moon',
-        'snake',
-        'apple',
-        'dog',
-        'cat'
-    ];
+        return;
+    }
 
     let newImageIndex = Math.floor(Math.random() * myImagesArray.length);
     let newImage = myImagesArray[newImageIndex];
     let imageElement = document.getElementById('image-display');
     let answer = myAnswersArray[newImageIndex];
     let answerInput = document.getElementById('game-answer-box');
+
+    // Remove images and answers displayed from aarrays
+    myImagesArray.splice(newImageIndex, 1);
+    myAnswersArray.splice(newImageIndex, 1);
+
     imageElement.src = newImage;
     imageElement.setAttribute('data-answer', answer);
     answerInput.value = '';
@@ -119,14 +138,14 @@ function checkAnswer() {
 
     if (selectedAnswer === correctAnswer) {
         alert('Well done! You got it!');
-        incrementPositiveScore();        
-    } else if (selectedAnswer === ('')) {
+        incrementPositiveScore();
+    } else if (selectedAnswer === '') {
         alert('You have to insert an answer!');
     } else {
-        alert('Oh, sorry! Incorrect answer! You got ${userAnswer}. Correct answer is ${correctAnswer.value}!');
+        alert(`Oh, sorry! Incorrect answer! You got '${selectedAnswer}'. Correct answer is '${correctAnswer}'!`);
         incrementNegativeScore();
     }
-    
+
 
     displayImageGame();
 

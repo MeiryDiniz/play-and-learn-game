@@ -12,15 +12,16 @@ body {
     line-height: 150%;
 }
 
-button:hover, #play-bt:hover {
+button:hover,
+#play-bt:hover {
     color: #51f093;
     border-color: #f050ae;
 }
 
 .background-img {
-   background: url('../images/background-image.webp') no-repeat center center;
-   overflow: hidden;
-   background-attachment: fixed;
+    background: url('../images/background-image.webp') no-repeat center center;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 /* index.html style */
@@ -47,6 +48,7 @@ button:hover, #play-bt:hover {
 /* game-pre-view */
 
 /* game area index.html and gamearea.html file */
+
 #game-pre-view,
 #game-area {
     border: 2px solid #f050ae;
@@ -54,7 +56,6 @@ button:hover, #play-bt:hover {
     margin: auto;
     width: 40%;
     background: black;
-    
 }
 
 #game-name {
@@ -101,13 +102,11 @@ button:hover, #play-bt:hover {
     font-size: 50px;
 }
 
-
-
 /* welcome message */
 
 #welcome-message {
     border: 2px solid #f050ae;
-   background: black;
+    background: black;
     height: 50px;
     width: 80%;
     margin: auto;
@@ -133,6 +132,7 @@ button:hover, #play-bt:hover {
 }
 
 /* gamearea.html style */
+
 
 a {
     text-decoration: none;
@@ -163,38 +163,172 @@ a {
     height: 80px;
     width: 80px;
     margin: 1% 0 0 45%;
-  
-    
 }
 
 #game-answer-box {
     border: 2px solid #f0e351;
     height: 55px;
-    width: 50%;
-    font-size: 25px;
+    width: 60%;
+    font-size: 30px;
     text-align: center;
     display: block;
     margin: auto;
-    
 }
 
 #buttons-box {
-   justify-content: center;
-   align-items: center;
-   display: flex;
-   gap: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
 
+#home-bt {
+    font-size: 30px;
 }
 
 #home-box {
-   margin: auto;
-   width: 5%;
+    margin: auto;
+    width: 7%;
 }
 
-.game-box-buttons, #home-box {
+.game-box-buttons {
     background: black;
     border: 2px solid #51f093;
     color: #f050ae;
     font-size: 25px;
 }
 
+/* Media queries */
+
+@media (max-width: 1175px) {
+
+    #game-pre-view,
+    #game-area {
+
+        width: 90%;
+
+    }
+
+    .score p {
+        font-size: 18px;
+    }
+
+    .score {
+        height: 40px;
+    }
+
+    #hero {
+        height: 160px;
+    }
+
+    #hero h1 {
+        font-size: 50px;
+    }
+
+    #game-name {
+        font-size: 35px;
+    }
+
+    #welcome-message h2 {
+        font-size: 25px;
+    }
+
+    #welcome-message {
+        width: 90%;
+        height: 70px;
+    }
+
+    #game-instructions {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .game-box-buttons {
+        font-size: 16px;
+    }
+
+    #home-box {
+
+        width: 5%;
+    }
+
+    #home-bt {
+        font-size: 20px;
+    }
+
+    #image-box {
+        margin: 1% 0 0 45%;
+    }
+
+    #play-bt {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 760px) {
+    #game-answer-box {
+        font-size: 25px;
+    }
+
+    #game-pre-view,
+    #game-area {
+        width: 80%;
+    }
+
+    #hero {
+        height: 140px;
+    }
+
+    #hero h1 {
+        font-size: 35px;
+    }
+
+    .score {
+        height: 40px;
+        width: 55%;
+    }
+}
+
+@media (max-width: 425px) {
+    #game-answer-box {
+        font-size: 15px;
+    }
+
+    #image-box {
+        margin: 1% 0 0 41%;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero {
+        height: 80px;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+    }
+
+    #game-pre-view,
+    #game-area {
+        width: 100%;
+    }
+
+    .game-box-buttons {
+        font-size: 16px;
+    }
+
+    #image-box {
+        margin: 1% 0 0 35%;
+    }
+
+    #welcome-message {
+        height: 70px;
+        width: 90%;
+    }
+
+    #game-instructions {
+        width: 60%;
+    }
+
+
+}
