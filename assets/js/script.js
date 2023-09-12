@@ -117,7 +117,7 @@ function displayImageGame() {
     // Remove images and answers displayed from aarrays
     myImagesArray.splice(newImageIndex, 1);
     myAnswersArray.splice(newImageIndex, 1);
-
+    
     imageElement.src = newImage;
     imageElement.setAttribute('data-answer', answer);
     answerInput.value = '';
