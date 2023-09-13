@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="spelling game" />
-    <meta name="keywords" content="game, kids, words, spelling" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="spelling game">
+    <meta name="keywords" content="game, kids, words, spelling">
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Quicksand:wght@600&display=swap"
       rel="stylesheet"
-    />
+    >
     <title>Play and Learn</title>
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/images/apple-touch-icon.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/images/favicon-32x32.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon-16x16.png"
-    />
+    >
   </head>
 
   <body class="background-img">
@@ -49,14 +49,14 @@
         </a>
       </div>
     </header>
-    <br />
+    <br>
     <div class="score">
       <p>
         <i class="fa-regular fa-square-check fa-sm" style="color: #51f093"></i>
         Correct Answers <span id="correct">0</span>
       </p>
     </div>
-    <br />
+    <br>
     <div class="score">
       <p>
         <i
@@ -66,31 +66,31 @@
         Wrong Answers <span id="wrong">0</span>
       </p>
     </div>
-    <br />
+    <br>
     <div id="game-area">
       <div id="image-box">
-        <img id="image-display" src="" alt="Displayed Image" />
+        <img id="image-display" src="" alt="Displayed Image">
       </div>
-      <br />
+      <br>
       <input
         id="game-answer-box"
         type="text"
         placeholder="Click here to type your Answer!"
-      />
-      <br />
+      >
+      <br>
       <div id="buttons-box">
         <button data-type='check' class="game-box-buttons" id="check-answer">
           Check Answer
           <i class="fa-solid fa-check fa-sm" style="color: #51f093"></i>
         </button>
-        <br />
+        <br>
         <button id="next-image" class="game-box-buttons" data-type="next">
           Next Image
           <i class="fa-solid fa-arrow-right fa-sm" style="color: #51f093"></i>
         </button>
       </div>
     </div>
-    <br />
+    <br>
     <div id="home-box">
       <button  class="game-box-buttons" id="home-bt" onclick="homePage()"> 
         Home <i class="fa-solid fa-rotate-left" style="color: #51aef0"></i>

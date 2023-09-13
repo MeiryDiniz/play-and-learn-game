@@ -18,7 +18,7 @@ function homePage() {
 
 }
 
-// Add event listeners to the game box page 
+// Add event listeners to the game buttons on the home page 
 
 document.addEventListener("DOMContentLoaded", function () {
     let callButtons = document.getElementsByTagName('button');
