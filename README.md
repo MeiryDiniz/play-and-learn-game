@@ -4,7 +4,7 @@
 The game is composed of 20 words, which are: monosyllables, disyllable, trisyllable and 4 syllable.
 The game is easy and intuitive. You can also find on the home page all the intructuctions about how to play.
 
-![Responsive Image]()
+![Responsive Image](/workspaces/play-and-learn-game/assets/images/readme.md/responsive screens sizes.webp)
 
 ## Features
 
@@ -17,13 +17,14 @@ The website has a colourful designer and clickble ``buttons`` which allow easy n
   - All pages display on their top the hero with the logo.
   - You can go back to the main page through the **Hero** as it is clickble.
 
-![Hero]()
+![Home Page Hero](/workspaces/play-and-learn-game/assets/images/readme.md/home page hero.webp)
+![Game Page Hero](/workspaces/play-and-learn-game/assets/images/readme.md/game page hero.webp)
 
-- _Game Home Page_
+- _Home Page_
   
   - The home page is a preview of the game page, that allow you to imagine how the game area is and how it is played.
   
-![Game Preview]()
+![Home Page](/workspaces/play-and-learn-game/assets/images/readme.md/home page.webp)
   
 - _Welcome and Instructions_
 
@@ -36,39 +37,50 @@ The website has a colourful designer and clickble ``buttons`` which allow easy n
   - The game page is composed for the game area and three clickble ``buttons`` which allow you to check your answer, go to the next image or go back to the home page.
   - Above the game area is the score area information, which is updated accordingly to the answers.
   
-![Game Page]()
+![Game Page](/workspaces/play-and-learn-game/assets/images/readme.md/game page.webp)
   
 ## Testing
 
 - All ``buttons`` were tested and are working.
 - The website game was tested and works on different browsers such as, Chrome, Microsoft Edge and Safari.
 - The website game was tested and is responsive displayed in different viewports.
-![Iphone 12-pro]()
-![Iphone 11]()
-
 - The website game was run on the _Lighthouse_ tool.
-![Lighthouse]()
+
+![Lighthouse Desktop](/workspaces/play-and-learn-game/assets/images/readme.md/lighthouse testing desktop.webp)
+![Lighthouse Mobile](/workspaces/play-and-learn-game/assets/images/readme.md/lighthouse testing mobile.webp)
 
 ## Validator Testing
 
 - _HTML_
   - The HTML code of all pages was tested and passed through the oficial [W3C Validator](https://validator.w3.org/) and didn't have any error returned.
   
-![HTML Validator]()
+![HTML Validator](/workspaces/play-and-learn-game/assets/images/readme.md/html validator.webp)
   
 - _CSS_
   - The CSS code was passed through the oficial [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) and didn't have any error returned.
 
-![CSS Validator]()
+![CSS Validator](/workspaces/play-and-learn-game/assets/images/readme.md/css validator.webp)
 
 - _JavaScript_
   - The JavaScript code was passed through the oficial [JSHint JavaScript Validator](https://jshint.com/) and didn't have any error returned.
 
-![JSHint Validator]()
+![JSHint Validator](/workspaces/play-and-learn-game/assets/images/readme.md/javascript validator.webp)
   
 ## Unfixed Bugs
 
 There aren't any bugs to be fixed.
+
+## Fixed Bugs
+
+ - When I published the website game the game area page was not loading when the Pay ``button`` was clicked beacause I used the wrong path to have access to this file.
+
+**Wrong** 
+`../gamearea.html`
+
+**Correct** 
+`gamearea.html`
+
+- I also had problem with the functions because of the correct position of `()`, `{}`, and `[]`. I had to take a break, revise the course content and testing the different ways to figure out mistakes.
 
 ## Deployment
 
@@ -80,7 +92,7 @@ There aren't any bugs to be fixed.
    4. On the (Branch) option drop-down, click on (main) and save:
    5. The process is completed and the page will provide the link to the website.
 
-Visit the website here: [Play and Learn Game]()
+Visit the website here: [Play and Learn Game](https://meirydiniz.github.io/play-and-learn-game/index.html)
 
 ## Resource
 
@@ -105,5 +117,6 @@ Visit the website here: [Play and Learn Game]()
 ## Wireframe
 
 The [Balsamiq Wireframes](https://balsamiq.com/) was used to establish the idea and basic structure of the game.
-![Play and Learn]()
-![Play and Learn]()
+
+![Play and Learn Home Page](/workspaces/play-and-learn-game/assets/images/readme.md/wireframe pp2 home page.webp)
+![Play and Learn Game Page](/workspaces/play-and-learn-game/assets/images/readme.md/wireframe pp2 game area.webp)
