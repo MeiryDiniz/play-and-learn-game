@@ -3,7 +3,7 @@
  * button is clicked
  */
 function startGame() {
-    window.location.href = '../gamearea.html';
+    window.location.href = 'gamearea.html';
 
 }
 
@@ -14,7 +14,7 @@ function startGame() {
 
 
 function homePage() {
-    window.location.href = '../index.html';
+    window.location.href = 'index.html';
 
 }
 
