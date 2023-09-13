@@ -3,7 +3,7 @@
  * button is clicked
  */
 function startGame() {
-    window.location.href = 'gamearea.html';
+    window.location.href = '../gamearea.html';
 
 }
 
@@ -95,33 +95,40 @@ let myAnswersArray = [
     'cat'
 ];
 
+
+//Function to shuffle images and answers arrays to display game images 
+
+function shuffleArrays() {
+    for (let i = myImagesArray.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [myImagesArray[i], myImagesArray[j]] = [myImagesArray[j], myImagesArray[i]],
+            [myAnswersArray[i], myAnswersArray[j]] = [myAnswersArray[j], myAnswersArray[i]];
+
+    }
+}
+
 /**
- * The main function to display game images and 
- * and match the array of answers to the images
- * array
+ * Function to display game images and match the array of answers to the 
+ * images array
  */
 
-function displayImageGame() {
-    // Check if all images were displayed
-    if (myAnswersArray.length === 0) {
 
-        return;
+let newImageIndex = 0;
+
+function displayImageGame() {    
+    let imageElement = document.getElementById('image-display');
+
+    if (newImageIndex >= myAnswersArray.length) {
+        newImageIndex = 0;
+        shuffleArrays();
     }
 
-    let newImageIndex = Math.floor(Math.random() * myImagesArray.length);
-    let newImage = myImagesArray[newImageIndex];
-    let imageElement = document.getElementById('image-display');
     let answer = myAnswersArray[newImageIndex];
-    let answerInput = document.getElementById('game-answer-box');
-
-    // Remove images and answers displayed from aarrays
-    myImagesArray.splice(newImageIndex, 1);
-    myAnswersArray.splice(newImageIndex, 1);
-    
-    imageElement.src = newImage;
+    let imageDisplay = myImagesArray[newImageIndex];
+    imageElement.src = imageDisplay;
     imageElement.setAttribute('data-answer', answer);
-    answerInput.value = '';
 
+    newImageIndex++;
 }
 
 /**
@@ -136,7 +143,7 @@ function checkAnswer() {
     let selectedAnswer = answerInput.value;
     let correctAnswer = image.dataset.answer;
 
-    if (selectedAnswer === correctAnswer) {
+    if (selectedAnswer.toLowerCase() === correctAnswer) {
         alert('Well done! You got it!');
         incrementPositiveScore();
     } else if (selectedAnswer === '') {
@@ -145,6 +152,9 @@ function checkAnswer() {
         alert(`Oh, sorry! Incorrect answer! You got '${selectedAnswer}'. Correct answer is '${correctAnswer}'!`);
         incrementNegativeScore();
     }
+
+    let clearBox = document.getElementById('game-answer-box');
+    clearBox.value = '';
 
 
     displayImageGame();
