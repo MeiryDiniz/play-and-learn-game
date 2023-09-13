@@ -4,7 +4,7 @@
 The game is composed of 20 words, which are: monosyllables, disyllable, trisyllable and 4 syllable.
 The game is easy and intuitive. You can also find on the home page all the intructuctions about how to play.
 
-![Responsive Image](/workspaces/play-and-learn-game/assets/images/readme.md/responsive screens sizes.webp)
+![Responsive Image](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/responsive%20screens%20sizes.webp)
 
 ## Features
 
@@ -17,27 +17,25 @@ The website has a colourful designer and clickble ``buttons`` which allow easy n
   - All pages display on their top the hero with the logo.
   - You can go back to the main page through the **Hero** as it is clickble.
 
-![Home Page Hero](/workspaces/play-and-learn-game/assets/images/readme.md/home page hero.webp)
-![Game Page Hero](/workspaces/play-and-learn-game/assets/images/readme.md/game page hero.webp)
+![Home Page Hero](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/home%20page%20hero.webp)
+![Game Page Hero](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/game%20page%20hero.webp)
 
 - _Home Page_
   
   - The home page is a preview of the game page, that allow you to imagine how the game area is and how it is played.
   
-![Home Page](/workspaces/play-and-learn-game/assets/images/readme.md/home page.webp)
+![Home Page](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/home%20page.webp)
   
 - _Welcome and Instructions_
 
   - The **Welcome** message tells exactly the mean of the game, and below is the ``suummary`` instructions where you can click to read the game instructions.
-  
-![Welcome and Instructions]()
-  
+    
 - _Game Area Page_
 
   - The game page is composed for the game area and three clickble ``buttons`` which allow you to check your answer, go to the next image or go back to the home page.
   - Above the game area is the score area information, which is updated accordingly to the answers.
   
-![Game Page](/workspaces/play-and-learn-game/assets/images/readme.md/game page.webp)
+![Game Page](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/game%20page.webp)
   
 ## Testing
 
@@ -46,25 +44,25 @@ The website has a colourful designer and clickble ``buttons`` which allow easy n
 - The website game was tested and is responsive displayed in different viewports.
 - The website game was run on the _Lighthouse_ tool.
 
-![Lighthouse Desktop](/workspaces/play-and-learn-game/assets/images/readme.md/lighthouse testing desktop.webp)
-![Lighthouse Mobile](/workspaces/play-and-learn-game/assets/images/readme.md/lighthouse testing mobile.webp)
+![Lighthouse Desktop](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/lighthouse%20testing%20desktop.webp)
+![Lighthouse Mobile](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/lighthouse%20testing%20mobile.webp)
 
 ## Validator Testing
 
 - _HTML_
   - The HTML code of all pages was tested and passed through the oficial [W3C Validator](https://validator.w3.org/) and didn't have any error returned.
   
-![HTML Validator](/workspaces/play-and-learn-game/assets/images/readme.md/html validator.webp)
+![HTML Validator](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/html%20validator.webp)
   
 - _CSS_
   - The CSS code was passed through the oficial [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) and didn't have any error returned.
 
-![CSS Validator](/workspaces/play-and-learn-game/assets/images/readme.md/css validator.webp)
+![CSS Validator](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/css%20validator.webp)
 
 - _JavaScript_
   - The JavaScript code was passed through the oficial [JSHint JavaScript Validator](https://jshint.com/) and didn't have any error returned.
 
-![JSHint Validator](/workspaces/play-and-learn-game/assets/images/readme.md/javascript validator.webp)
+![JSHint Validator](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/javascript%20validator.webp)
   
 ## Unfixed Bugs
 
@@ -118,5 +116,5 @@ Visit the website here: [Play and Learn Game](https://meirydiniz.github.io/play-
 
 The [Balsamiq Wireframes](https://balsamiq.com/) was used to establish the idea and basic structure of the game.
 
-![Play and Learn Home Page](/workspaces/play-and-learn-game/assets/images/readme.md/wireframe pp2 home page.webp)
-![Play and Learn Game Page](/workspaces/play-and-learn-game/assets/images/readme.md/wireframe pp2 game area.webp)
+![Play and Learn Home Page](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/wireframe%20pp2%20home%20page.webp)
+![Play and Learn Game Page](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/wireframe%20pp2%20game%20area.webp)
