@@ -140,10 +140,10 @@ function checkAnswer() {
 
     let answerInput = document.getElementById('game-answer-box');
     let image = document.getElementById('image-display');
-    let selectedAnswer = answerInput.value;
-    let correctAnswer = image.dataset.answer;
+    let selectedAnswer = answerInput.value.toLowerCase();
+    let correctAnswer = image.dataset.answer.toLowerCase();
 
-    if (selectedAnswer.toLowerCase() === correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
         alert('Well done! You got it!');
         incrementPositiveScore();
     } else if (selectedAnswer === '') {
