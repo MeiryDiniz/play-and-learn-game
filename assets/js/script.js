@@ -115,7 +115,7 @@ function shuffleArrays() {
 
 let newImageIndex = 0;
 
-function displayImageGame() {    
+function displayImageGame() {
     let imageElement = document.getElementById('image-display');
 
     if (newImageIndex >= myAnswersArray.length) {
@@ -140,8 +140,8 @@ function checkAnswer() {
 
     let answerInput = document.getElementById('game-answer-box');
     let image = document.getElementById('image-display');
-    let selectedAnswer = answerInput.value.toLowerCase();
-    let correctAnswer = image.dataset.answer.toLowerCase();
+    let selectedAnswer = answerInput.value.toLowerCase().trim();
+    let correctAnswer = image.dataset.answer.toLowerCase().trim();
 
     if (selectedAnswer === correctAnswer) {
         alert('Well done! You got it!');
