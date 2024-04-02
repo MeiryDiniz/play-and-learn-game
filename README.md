@@ -1,8 +1,6 @@
 # Play and Learn Game
 
-**Play and Learn** is an educative game which was created to help kids to learn the spelling. 
-The game is composed of 20 words, which are: monosyllables, disyllable, trisyllable and 4 syllable.
-The game is easy and intuitive. You can also find on the home page all the intructuctions about how to play.
+**Play and Learn** is an educational game that was created to help children learn spelling. The game consists of 20 words, namely: monosyllables, disyllables, trisyllables and 4 syllables. The game is easy and intuitive. You can also find all instructions on how to play on the home page.
 
 ![Responsive Image](https://github.com/MeiryDiniz/play-and-learn-game/blob/main/assets/images/readme.md/responsive%20screens%20sizes.webp)
 
